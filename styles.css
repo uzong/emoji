@@ -80,7 +80,7 @@ h1 {
 
 .emoji-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 15px;
     padding: 20px;
 }
@@ -89,7 +89,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #eee;
     border-radius: 10px;
     cursor: pointer;
@@ -102,12 +102,12 @@ h1 {
 }
 
 .emoji {
-    font-size: 2em;
-    margin-bottom: 5px;
+    font-size: 3em;
+    margin-bottom: 8px;
 }
 
 .keywords {
-    font-size: 12px;
+    font-size: 13px;
     color: #666;
     text-align: center;
 }
@@ -132,7 +132,11 @@ h1 {
 
 @media (max-width: 768px) {
     .emoji-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .emoji {
+        font-size: 2.5em;
     }
     
     .category-btn {
