@@ -24,9 +24,15 @@ const emojiData = {
         { char: '🥲', keywords: ['带泪微笑', '感动', '欣慰'] },
         { char: '😋', keywords: ['美味', '好吃', '开心'] },
         { char: '😛', keywords: ['吐舌', '调皮', '开玩笑'] },
-        { char: '😜', keywords: ['眨眼吐舌', '调皮', '搞怪'] }
+        { char: '😜', keywords: ['眨眼吐舌', '调皮', '搞怪'] },
+        { char: '🤪', keywords: ['疯狂', '搞笑', '调皮'] },
+        { char: '😝', keywords: ['吐舌笑', '调皮', '搞怪'] },
+        { char: '🤑', keywords: ['钱眼', '贪财', '发财'] },
+        { char: '🤗', keywords: ['拥抱', '友好', '温暖'] },
+        { char: '🤭', keywords: ['捂嘴笑', '搞笑', '调皮'] },
+        { char: '🤫', keywords: ['嘘', '秘密', '安静'] },
+        { char: '🤔', keywords: ['思考', '疑惑', '沉思'] }
     ],
-    
     animals: [
         { char: '🐶', keywords: ['狗', '小狗', '宠物'] },
         { char: '🐱', keywords: ['猫', '小猫', '宠物'] },
@@ -52,9 +58,17 @@ const emojiData = {
         { char: '🦅', keywords: ['鹰', '老鹰'] },
         { char: '🦉', keywords: ['猫头鹰', '鸟'] },
         { char: '🦆', keywords: ['鸭子', '鸭'] },
-        { char: '🐝', keywords: ['蜜蜂', '昆虫'] }
+        { char: '🐝', keywords: ['蜜蜂', '昆虫'] },
+        { char: '🐞', keywords: ['虫子', '昆虫'] },
+        { char: '🐜', keywords: ['蚂蚁', '昆虫'] },
+        { char: '🕷️', keywords: ['蜘蛛', '昆虫'] },
+        { char: '🕸️', keywords: ['蜘蛛网', '昆虫'] },
+        { char: '蜾蠃', keywords: ['黄蜂', '昆虫'] },
+        { char: '🦝', keywords: ['狐狸', '哺乳动物'] },
+        { char: '🦨', keywords: ['浣熊', '哺乳动物'] },
+        { char: '🦤', keywords: ['鸵鸟', '鸟类'] },
+        { char: '🦢', keywords: ['天鹅', '鸟类'] }
     ],
-    
     food: [
         { char: '🍎', keywords: ['苹果', '水果', '红苹果'] },
         { char: '🍐', keywords: ['梨', '水果'] },
@@ -80,9 +94,17 @@ const emojiData = {
         { char: '🍠', keywords: ['红薯', '蔬菜'] },
         { char: '🥐', keywords: ['牛角面包', '面包'] },
         { char: '🥖', keywords: ['法棍', '面包'] },
-        { char: '🥨', keywords: ['椒盐卷饼', '面包'] }
+        { char: '🥨', keywords: ['椒盐卷饼', '面包'] },
+        { char: '🥯', keywords: ['热狗', '快餐'] },
+        { char: '🌭', keywords: ['热狗', '快餐'] },
+        { char: '🍔', keywords: ['汉堡包', '快餐'] },
+        { char: '🍟', keywords: ['薯条', '快餐'] },
+        { char: '🍕', keywords: ['披萨', '快餐'] },
+        { char: '🥪', keywords: ['三明治', '快餐'] },
+        { char: '🌮', keywords: ['玉米片', '快餐'] },
+        { char: '🌯', keywords: ['卷饼', '快餐'] },
+        { char: '🥙', keywords: ['塔科', '快餐'] }
     ],
-    
     activities: [
         { char: '⚽', keywords: ['足球', '运动', '球类'] },
         { char: '🏀', keywords: ['篮球', '运动', '球类'] },
@@ -108,7 +130,59 @@ const emojiData = {
         { char: '🎳', keywords: ['保龄球', '运动', '球类'] },
         { char: '🎪', keywords: ['马戏团', '表演', '娱乐'] },
         { char: '🎨', keywords: ['绘画', '艺术', '创作'] },
-        { char: '🎭', keywords: ['表演', '戏剧', '艺术'] }
+        { char: '🎭', keywords: ['表演', '戏剧', '艺术'] },
+        { char: '🎬', keywords: ['电影', '娱乐', '艺术'] },
+        { char: '🎮', keywords: ['游戏', '娱乐', '电子游戏'] },
+        { char: '🎲', keywords: ['骰子', '游戏', '娱乐'] },
+        { char: '🎰', keywords: ['老虎机', '游戏', '娱乐'] },
+        { char: '🎲', keywords: ['骰子', '游戏', '娱乐'] },
+        { char: '🎮', keywords: ['游戏', '娱乐', '电子游戏'] },
+        { char: '🕹️', keywords: ['游戏手柄', '游戏', '娱乐'] },
+        { char: '🎰', keywords: ['老虎机', '游戏', '娱乐'] }
+    ],
+    people_and_body: [ // 新增分类：人物与身体
+        { char: '🧍', keywords: ['站立', '人'] },
+        { char: '🧎', keywords: ['跪着', '人'] },
+        { char: '🧏', keywords: ['聋哑人', '手语', '人'] },
+        { char: '🧑‍🦳', keywords: ['带狗的人', '宠物主人', '人'] },
+        { char: '🧑‍🦤', keywords: ['带恐龙的人', '恐龙', '人'] },
+        { char: '🧑‍🏫', keywords: ['老师', '教育', '人'] },
+        { char: '🧑‍⚖️', keywords: ['法官', '法律', '人'] },
+        { char: '🧑‍🌾', keywords: ['农民', '农业', '人'] },
+        { char: '🧑‍🍳', keywords: ['厨师', '烹饪', '人'] },
+        { char: '🧑‍🔧', keywords: ['工人', '机械', '人'] },
+        { char: '🧑‍🔬', keywords: ['科学家', '研究', '人'] },
+        { char: '🧑‍🎨', keywords: ['艺术家', '绘画', '人'] },
+        { char: '🧑‍🎤', keywords: ['歌手', '音乐', '人'] },
+        { char: '🧑‍💼', keywords: ['商务人士', '办公室', '人'] },
+        { char: '🧑‍💻', keywords: ['程序员', '电脑', '人'] },
+        { char: '🧑‍🔧', keywords: ['修理工', '修理', '人'] },
+        { char: '🧑‍🔬', keywords: ['研究人员', '实验室', '人'] },
+        { char: '🧑‍🎨', keywords: ['画家', '画布', '人'] },
+        { char: '🧑‍🎤', keywords: ['表演者', '舞台', '人'] },
+        { char: '🧑‍💼', keywords: ['商人', '交易', '人'] }
+    ],
+    drinks: [ // 新增分类：饮品
+        { char: '🍺', keywords: ['啤酒', '酒精饮料'] },
+        { char: '🍻', keywords: ['庆祝', '啤酒', '酒精饮料'] },
+        { char: '🥂', keywords: ['庆祝', '香槟', '酒精饮料'] },
+        { char: '🍷', keywords: ['葡萄酒', '酒精饮料'] },
+        { char: '🥃', keywords: ['威士忌', '酒精饮料'] },
+        { char: '🍸', keywords: ['鸡尾酒', '酒精饮料'] },
+        { char: '🍹', keywords: ['热带鸡尾酒', '酒精饮料'] },
+        { char: '🍾', keywords: ['香槟', '庆祝', '酒精饮料'] },
+        { char: '🧉', keywords: ['草药茶', '茶', '饮料'] },
+        { char: '☕', keywords: ['咖啡', '饮料'] },
+        { char: '🍵', keywords: ['茶', '饮料'] },
+        { char: '🍶', keywords: ['酒器', '日本酒', '酒精饮料'] },
+        { char: '🍺', keywords: ['啤酒', '酒精饮料'] },
+        { char: '🍻', keywords: ['庆祝', '啤酒', '酒精饮料'] },
+        { char: '🥂', keywords: ['庆祝', '香槟', '酒精饮料'] },
+        { char: '🍷', keywords: ['葡萄酒', '酒精饮料'] },
+        { char: '🥃', keywords: ['威士忌', '酒精饮料'] },
+        { char: '🍸', keywords: ['鸡尾酒', '酒精饮料'] },
+        { char: '🍹', keywords: ['热带鸡尾酒', '酒精饮料'] },
+        { char: '🍾', keywords: ['香槟', '庆祝', '酒精饮料'] }
     ]
 };
 
@@ -142,7 +216,7 @@ function displayEmojis(category) {
 
     setTimeout(() => {
         emojiGrid.innerHTML = '';
-        
+
         if (category === 'all') {
             Object.values(emojiData).flat().forEach(emoji => {
                 createEmojiElement(emoji);
@@ -178,7 +252,7 @@ function searchEmojis(query) {
 
     const searchQuery = query.toLowerCase().trim();
     const emojiItems = document.querySelectorAll('.emoji-item');
-    
+
     emojiItems.forEach(item => {
         const keywords = item.getAttribute('data-keywords').toLowerCase();
         const emoji = item.textContent;
@@ -209,14 +283,14 @@ function fallbackCopyToClipboard(text) {
     textArea.style.left = '-999999px';
     document.body.appendChild(textArea);
     textArea.select();
-    
+
     try {
         document.execCommand('copy');
         showToast();
     } catch (err) {
         console.error('复制失败:', err);
     }
-    
+
     document.body.removeChild(textArea);
 }
 
@@ -229,4 +303,4 @@ function showToast() {
 }
 
 // 页面加载完成后初始化
-document.addEventListener('DOMContentLoaded', initializeEmojiGrid); 
+document.addEventListener('DOMContentLoaded', initializeEmojiGrid);
